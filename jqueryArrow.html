@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script src="jquery.arrow.js"></script>
+
+</head>
+<body>
+<script>
+
+$(document).ready(function() {
+  // Handler for .ready() called.
+  $('#myElement').addArrow();
+  $('#myElement2').addArrow({ isBefore: 'false' });
+  $('#myElement3').addArrow({ direction: 'left' });
+  $('#myElement4').addArrow({ color: 'blue' });
+  $('#myElement5').addArrow({ isThick: 'false' });
+});
+
+</script>
+
+<table border="1" cellpadding="10">
+<tr>
+<th>Options</th>
+<th>Code</th>
+<th>Result</th>
+</tr>
+<tr>
+<td valign="top">Default</td>
+<td valign="top">$('#myElement').addArrow();</td>
+<td valign="top"><div id="myElement">I am an element</div></td>
+</tr>
+
+<tr>
+<td valign="top">isBefore: false</td>
+<td valign="top">$('#myElement2').addArrow({ isBefore: 'false' });</td>
+<td valign="top"><div id="myElement2">I am an element with an arrow after me</div></td>
+</tr>
+
+<tr>
+<td valign="top">direction: left</td>
+<td valign="top">$('#myElement3').addArrow({ direction: 'left' });</td>
+<td valign="top"><div id="myElement3">I am an element with an arrow pointing left</div></td>
+</tr>
+
+<tr>
+<td valign="top">color: blue</td>
+<td valign="top">$('#myElement4').addArrow({ color: 'blue' });</td>
+<td valign="top"><div id="myElement4">I am an element that has a blue arrow</div></td>
+</tr>
+
+<tr>
+<td valign="top">isThick: false</td>
+<td valign="top">$('#myElement5').addArrow({ isThick: 'false' });</td>
+<td valign="top"><div id="myElement5">I am an element that has a skinny arrow</div></td>
+</tr>
+</table>
+
+</body>
+</html>
